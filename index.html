@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Subaru Service Connect — Deployment Test</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f9;color:#17283d;font:16px/1.6 system-ui,sans-serif}header{padding:24px max(24px,calc((100% - 960px)/2));background:#fff;border-bottom:1px solid #dde4ed;font-weight:600}main{max-width:760px;margin:70px auto;padding:32px}section{background:#fff;border:1px solid #dde4ed;border-radius:16px;padding:36px}.tag{display:inline-block;background:#e8f3eb;color:#24613a;padding:6px 12px;border-radius:30px;font-size:13px}h1{font-size:clamp(26px,5vw,38px);line-height:1.2;margin:22px 0 16px}p{color:#58697c}dl{border-top:1px solid #dde4ed;margin-top:28px;padding-top:18px}dl div{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}dt{color:#58697c}dd{margin:0}button{font:inherit;background:#173e69;color:#fff;border:0;border-radius:7px;padding:12px 18px;cursor:pointer}#result{min-height:26px;margin-top:12px;color:#24613a}footer{margin-top:20px;font-size:13px;color:#58697c}@media(max-width:480px){main{margin:24px auto;padding:16px}section{padding:24px}}
+</style>
+</head>
+<body>
+<header>SUBARU / Service Connect</header>
+<main><section><span class="tag">Deployment test page</span><h1>Your new project is online.</h1><p>This page tests the connection between GitHub and Vercel for Subaru Service Calls.</p><dl><div><dt>Project</dt><dd>Subaru-Service-Calls</dd></div><div><dt>Branch</dt><dd>main</dd></div><div><dt>Test version</dt><dd>service-connect-test-001</dd></div></dl><button type="button" id="test">Test page interaction</button><div id="result" role="status" aria-live="polite"></div></section><footer>Test page only. Customer uploads, staff sign-in and reporting are not enabled. No customer data is stored here.</footer></main>
+<script>document.getElementById('test').addEventListener('click',function(){document.getElementById('result').textContent='Page interaction works.';});</script>
+</body></html>
