@@ -3,3 +3,20 @@
 .phone-do-not-call{color:#b42318;text-decoration:line-through;text-decoration-thickness:2px;cursor:not-allowed}
 
 .workspace-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}.workspace-header label{min-width:220px;max-width:100%}.workspace-header select{margin-bottom:0}.message{min-height:22px;margin-top:12px;color:#173e69}.dealership-summary{margin-bottom:16px}@media(max-width:600px){.workspace-header label{width:100%;min-width:0}}
+
+.followup-overdue {
+  background-color: #fff0f0;
+  border-left: 4px solid #b42318;
+  border-radius: 8px;
+  padding-inline: 14px;
+  animation: followup-overdue-pulse 2s ease-in-out 2;
+}
+
+@keyframes followup-overdue-pulse {
+  0%, 100% { background-color: #fff0f0; }
+  50% { background-color: #fbcaca; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .followup-overdue { animation: none; }
+}
